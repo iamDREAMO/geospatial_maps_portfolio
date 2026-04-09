@@ -20,7 +20,14 @@ Throughout this challenge, I worked extensively with **QGIS, Blender, Google Ear
 
 ### Town Distribution Across Ghana
 
-![day1](map_images/day1_points.webp)
+<table>
+  <tr>
+    <td><img src="map_images/day1_points.webp" alt="Map" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center">Points</td>
+  </tr>
+</table>
 
 **Overview:**
 This map visualizes the distribution of towns across Ghana’s 16 administrative regions. Ghana is divided into 228 districts, categorized as ordinary, municipal, or metropolitan based on population thresholds. The visualization highlights settlement distribution patterns across the country.
@@ -329,8 +336,8 @@ In alignment with the theme, this visualization was developed using Google Earth
     <td><img src="map_images/day21_raster_3d.webp" alt="3D Map" width="100%"></td>
   </tr>
   <tr>
-    <td align="center">2D View</td>
-    <td align="center">3D View</td>
+    <td align="center">Raster-2D</td>
+    <td align="center">Raster-3D</td>
   </tr>
 </table>
 
