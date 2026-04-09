@@ -169,12 +169,6 @@ Inspired by the [United States Environmental Protection Agency (EPA)]((https://w
 
 ### Soil Suitability Map for Mechanised and Other Cultivation Practices in Ghana
 
-<p align="center">
-  <span style="display:inline-block; width:100%; height:600px; overflow:hidden;">
-    <img src="geospatial_maps_portfolio/map_images/day11_retro_3d.webp"
-         style="width:100%; height:100%; object-fit:cover;">
-  </span>
-</p>
 
 **Overview:**
 This project is originally produced and printed by the Survey Department, Accra, Ghana, in May 1971. The historical map was reinterpreted and transformed into a 3D visualization using Blender to enhance terrain perception and spatial understanding. Additional contextual details are provided in the accompanying images.
