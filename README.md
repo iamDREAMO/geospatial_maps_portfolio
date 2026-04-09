@@ -323,9 +323,16 @@ In alignment with the theme, this visualization was developed using Google Earth
 
 ### 3D Bathymetry of New Zealand
 
-<!-- IMAGE PLACEHOLDER FOR 3D -->
-
-<!-- IMAGE PLACEHOLDER FOR 2D -->
+<table>
+  <tr>
+    <td><img src="map_images/day21_raster_2d.webp" alt="2D Map" width="100%"></td>
+    <td><img src="map_images/day21_raster_3d.webp" alt="3D Map" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center">2D View</td>
+    <td align="center">3D View</td>
+  </tr>
+</table>
 
 **Overview:**
 Developed using NIWA’s bathymetry model of New Zealand. The original dataset, with a spatial resolution of 250 meters, was clipped to focus specifically on the New Zealand region.
