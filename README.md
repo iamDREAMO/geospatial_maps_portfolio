@@ -46,7 +46,7 @@ This map visualizes the distribution of towns across Ghana’s 16 administrative
 <div align="center">
   <table>
     <tr>
-      <td><img src="map_images/day2_lines.webp" alt="Day 1 Points Map" width="500px"></td>
+      <td><img src="map_images/day2_lines.webp" alt="Day 2 Lines Map" width="500px"></td>
     </tr>
     <tr>
       <td align="center">Lines</td>
@@ -66,7 +66,17 @@ This map illustrates the international flight route to DjangoCon US 2023 in Durh
 
 ### Lakes of the World
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day3_polygons.webp" alt="Day 3 Polygons Map" width="500px"></td>
+    </tr>
+    <tr>
+      <td align="center">Lines</td>
+    </tr>
+  </table>
+</div>
+
 
 **Overview:**
 A global visualization of lakes represented as polygon features, emphasizing surface area distribution and spatial patterns. The project was developed both as a static cartographic product and an interactive web map.
