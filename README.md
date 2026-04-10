@@ -46,7 +46,7 @@ This map visualizes the distribution of towns across Ghana’s 16 administrative
 <div align="center">
   <table>
     <tr>
-      <td><img src="map_images/day2_lines.webp" alt="Day 1 Points Map" width="450px"></td>
+      <td><img src="map_images/day2_lines.webp" alt="Day 1 Points Map" width="500px"></td>
     </tr>
     <tr>
       <td align="center">Lines</td>
