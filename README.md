@@ -72,7 +72,7 @@ This map illustrates the international flight route to DjangoCon US 2023 in Durh
       <td><img src="map_images/day3_polygons.webp" alt="Day 3 Polygons Map" width="500px"></td>
     </tr>
     <tr>
-      <td align="center">Lines</td>
+      <td align="center">Polygons</td>
     </tr>
   </table>
 </div>
@@ -91,7 +91,16 @@ A global visualization of lakes represented as polygon features, emphasizing sur
 
 ### What Makes a Map Ineffective?
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day4_bad_map.webp" alt="Day 3 Polygons Map" width="500px"></td>
+    </tr>
+    <tr>
+      <td align="center">A Bad Map</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 This entry explores cartographic principles by demonstrating what constitutes a poorly designed map. A map that does not clearly answer **What, Where, When, and Who** may be considered ineffective.
