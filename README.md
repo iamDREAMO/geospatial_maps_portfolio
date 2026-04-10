@@ -237,7 +237,16 @@ This project presents a hexagon-based elevation visualization of Lesotho. Workin
 
 ### Level II Ecoregions of North America
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day10_north_america_3d.webp" alt="Day 9 North America Map" width="600px"></td>
+    </tr>
+    <tr>
+      <td align="center">North America</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 Inspired by the [United States Environmental Protection Agency (EPA)]((https://www.epa.gov/eco-research/ecoregions-north-america)), this map recreates the classification of the 50 Level II ecological regions of North America. These regions provide a more detailed subdivision of the broader Level I ecoregions, offering deeper insight into large ecological areas across the continent. Level II ecoregions are particularly valuable for national and subcontinental assessments of ecological patterns and environmental variation.
