@@ -126,10 +126,10 @@ Essential cartographic elements include:
 <div align="center">
   <table>
     <tr>
-      <td><img src="map_images/day5_analogue.gif" alt="Day 7 Navigation Map" width="400px" height="400px"></td>
+      <td><img src="map_images/day5_analogue.gif" alt="Day 5 Analogue Map" width="400px" height="400px"></td>
     </tr>
     <tr>
-      <td align="center">Navigation</td>
+      <td align="center">Analogue</td>
     </tr>
   </table>
 </div>
@@ -214,7 +214,16 @@ This map illustrates the spatial distribution of cassava cultivation across Afri
 
 ### Elevation of Lesotho
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day9_hexagons.webp" alt="Day 9 Hexagons Map" width="600px"></td>
+    </tr>
+    <tr>
+      <td align="center">Hexagons</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 This project presents a hexagon-based elevation visualization of Lesotho. Working with hexagonal grids was new to me and posed a significant challenge, but it became a valuable learning experience. Exploring this approach also led me to begin integrating Blender into my workflow—marking my first project combining QGIS and Blender for enhanced terrain visualization.
