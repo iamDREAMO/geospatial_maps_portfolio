@@ -240,7 +240,7 @@ This project presents a hexagon-based elevation visualization of Lesotho. Workin
 <div align="center">
   <table>
     <tr>
-      <td><img src="map_images/day10_north_america_3d.webp" alt="Day 9 North America Map" width="600px"></td>
+      <td><img src="map_images/day10_north_america_3d.webp" alt="Day 9 North America Map" width="450px"></td>
     </tr>
     <tr>
       <td align="center">North America</td>
