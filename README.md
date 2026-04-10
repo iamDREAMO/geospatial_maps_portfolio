@@ -46,7 +46,7 @@ This map visualizes the distribution of towns across Ghana’s 16 administrative
 <div align="center">
   <table>
     <tr>
-      <td><img src="map_images/day2_lines.webp" alt="Day 2 Lines Map" width="500px"></td>
+      <td><img src="map_images/day2_lines.webp" alt="Day 2 Lines Map" width="600px"></td>
     </tr>
     <tr>
       <td align="center">Lines</td>
@@ -69,7 +69,7 @@ This map illustrates the international flight route to DjangoCon US 2023 in Durh
 <div align="center">
   <table>
     <tr>
-      <td><img src="map_images/day3_polygons.webp" alt="Day 3 Polygons Map" width="500px"></td>
+      <td><img src="map_images/day3_polygons.webp" alt="Day 3 Polygons Map" width="600px"></td>
     </tr>
     <tr>
       <td align="center">Polygons</td>
@@ -136,7 +136,16 @@ A handcrafted terrain representation of Mo'orea, a volcanic island in French Pol
 
 ### Country Cities in Asia
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day6_asia.webp" alt="Day 6 Asia Map" width="600px"></td>
+    </tr>
+    <tr>
+      <td align="center">Asia</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 This map visualizes major cities across countries within the Asian continent. Accessing consistent and reliable city-level datasets for this project was particularly challenging. I welcome the sharing of credible data sources or relevant resource links to further improve and expand this work.
