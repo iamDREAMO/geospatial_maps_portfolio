@@ -20,12 +20,12 @@ Throughout this challenge, I worked extensively with **QGIS, Blender, Google Ear
 
 ### Town Distribution Across Ghana
 
-<table>
+<table width="50%">
   <tr>
     <td><img src="map_images/day1_points.webp" alt="Day 1 Points Map" width="40%"></td>
   </tr>
   <tr>
-    <td align="center">Points</td>
+    <td>Points</td>
   </tr>
 </table>
 
