@@ -21,7 +21,7 @@ Throughout this challenge, I worked extensively with **QGIS, Blender, Google Ear
 ### Town Distribution Across Ghana
 
 <div align="center">
-  <table width="30%">
+  <table width="20%">
     <tr>
       <td><img src="map_images/day1_points.webp" alt="Day 1 Points Map" width="100%"></td>
     </tr>
