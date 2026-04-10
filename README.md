@@ -182,7 +182,16 @@ Direct flights are often preferred by travelers embarking on long journeys, as l
 
 ### Cassava Africa
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day8-africa.webp" alt="Day 8 Africa Map" width="450px"></td>
+    </tr>
+    <tr>
+      <td align="center">Africa</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 This map illustrates the spatial distribution of cassava cultivation across Africa. Each point on the map represents approximately 500 hectares of land dedicated to cassava farming, providing a visual representation of production intensity and regional agricultural patterns across the continent.
