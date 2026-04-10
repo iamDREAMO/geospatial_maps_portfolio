@@ -25,7 +25,7 @@ Throughout this challenge, I worked extensively with **QGIS, Blender, Google Ear
     <td><img src="map_images/day1_points.webp" alt="Map" width="50%"></td>
   </tr>
   <tr>
-    <td align="center">Points</td>
+    <td align="center" width="50%">Points</td>
   </tr>
 </table>
 
