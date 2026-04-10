@@ -123,7 +123,16 @@ Essential cartographic elements include:
 
 ### Mo'orea Volcanic Island (Physical Model)
 
-<!-- IMAGE PLACEHOLDER OR VIDEO LINK -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day5_analogue.gif" alt="Day 7 Navigation Map" width="600px"></td>
+    </tr>
+    <tr>
+      <td align="center">Navigation</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 A handcrafted terrain representation of Mo'orea, a volcanic island in French Polynesia. This entry focused on physical terrain modeling without digital GIS tools, emphasizing analogue cartographic techniques.
