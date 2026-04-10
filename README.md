@@ -159,7 +159,16 @@ This map visualizes major cities across countries within the Asian continent. Ac
 
 ### Flight Flow from ACC to Neighboring Countries
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day7-navigation.webp" alt="Day 7 Navigation Map" width="600px"></td>
+    </tr>
+    <tr>
+      <td align="center">Navigation</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 Direct flights are often preferred by travelers embarking on long journeys, as layovers can be both tiring and time-consuming. Kotoka International Airport (ACC) currently serves as Ghana’s primary international gateway. This map visualizes outbound flight connections from ACC to airports, airfields, and helipads across neighboring countries, highlighting regional air connectivity patterns.
