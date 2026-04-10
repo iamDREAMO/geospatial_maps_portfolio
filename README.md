@@ -43,7 +43,16 @@ This map visualizes the distribution of towns across Ghana’s 16 administrative
 
 ### Flight Route to DjangoCon US 2023 (Durham, NC)
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day2_lines.webp" alt="Day 1 Points Map" width="450px"></td>
+    </tr>
+    <tr>
+      <td align="center">Lines</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 This map illustrates the international flight route to DjangoCon US 2023 in Durham, North Carolina. The total flight duration was approximately 22 hours, excluding layovers. The visualization emphasizes long-distance air connectivity and route mapping.
