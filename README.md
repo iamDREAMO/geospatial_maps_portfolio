@@ -263,7 +263,7 @@ Inspired by the [United States Environmental Protection Agency (EPA)]((https://w
 <table>
   <tr>
     <td><img src="map_images/day11_retro_2d.webp" alt="A Reto 2D Map" width="100%"></td>
-    <td><img src="map_images/day11_retro_3d.webp" alt="A Retro 3D Map" width="100%"></td>
+    <td><img src="map_images/day11_retro_3d.webp" alt="A Retro 3D Map" width="150%"></td>
   </tr>
   <tr>
     <td align="center">Retro-2D</td>
