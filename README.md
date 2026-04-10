@@ -23,7 +23,7 @@ Throughout this challenge, I worked extensively with **QGIS, Blender, Google Ear
 <div align="center">
   <table>
     <tr>
-      <td><img src="map_images/day1_points.webp" alt="Day 1 Points Map" width="500px"></td>
+      <td><img src="map_images/day1_points.webp" alt="Day 1 Points Map" width="450px"></td>
     </tr>
     <tr>
       <td align="center">Points</td>
