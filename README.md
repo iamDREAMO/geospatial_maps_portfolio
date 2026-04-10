@@ -94,7 +94,7 @@ A global visualization of lakes represented as polygon features, emphasizing sur
 <div align="center">
   <table>
     <tr>
-      <td><img src="map_images/day4_bad_map.webp" alt="Day 3 Polygons Map" width="500px"></td>
+      <td><img src="map_images/day4_bad_map.webp" alt="Day 3 Polygons Map" width="600px"></td>
     </tr>
     <tr>
       <td align="center">A Bad Map</td>
