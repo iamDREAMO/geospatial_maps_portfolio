@@ -126,7 +126,7 @@ Essential cartographic elements include:
 <div align="center">
   <table>
     <tr>
-      <td><img src="map_images/day5_analogue.gif" alt="Day 7 Navigation Map" width="400px"></td>
+      <td><img src="map_images/day5_analogue.gif" alt="Day 7 Navigation Map" width="400px" height="200px"></td>
     </tr>
     <tr>
       <td align="center">Navigation</td>
