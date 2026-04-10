@@ -22,10 +22,10 @@ Throughout this challenge, I worked extensively with **QGIS, Blender, Google Ear
 
 <table align="center" width="50%">
   <tr>
-    <td><img src="map_images/day1_points.webp" alt="Map" width="50%"></td>
+    <td><img src="map_images/day1_points.webp" alt="Day 1 Points Map" width="100%"></td>
   </tr>
   <tr>
-    <td width="50%">Points</td>
+    <td align="center">Points</td>
   </tr>
 </table>
 
