@@ -608,8 +608,8 @@ This map was generated using Prettymaps to align with the black-and-white theme,
 
 <table>
   <tr>
-    <td><img src="map_images/day25_antarctica_2d.webp" alt="Day 25 Antartica 2D Map" width="100%"></td>
-    <td><img src="map_images/day25_antarctica_3d.webp" alt="Day 25 Antartica 3D Map" width="100%"></td>
+    <td><img src="map_images/day25_antarctica_2d.webp" alt="Day 25 Antartica 2D Map" width="500px"></td>
+    <td><img src="map_images/day25_antarctica_3d.webp" alt="Day 25 Antartica 3D Map" width="500px"></td>
   </tr>
   <tr>
     <td align="center">Antartica-2D</td>
