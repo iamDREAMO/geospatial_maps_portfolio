@@ -478,13 +478,21 @@ The map was generated using Prettymaps, a Python package developed by [Marcelo d
 
 ### Kilimanjaro
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day20_outdoors_.gif" alt="Day 20 Outdoors Map" width="500px"></td>
+    </tr>
+    <tr>
+      <td align="center">Outdoors</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 Mount Kilimanjaro, located in the Kilimanjaro Region of Tanzania, is a dormant stratovolcano composed of three distinct volcanic cones: Kibo, Mawenzi, and Shira. It is the tallest mountain in Africa and the highest free-standing mountain in the world, rising to 5,895 meters (19,341 feet) above sea level and approximately 4,900 meters (16,100 feet) above its surrounding plateau. Kilimanjaro is also recognized as the highest volcano in both Africa and the Eastern Hemisphere.
 In alignment with the theme, this visualization was developed using Google Earth to emphasize terrain structure, elevation, and the mountain’s dominant landscape presence.
 
-**Terrain Video:** []
 
 **Tool and Data Source:** Google Earth
 
