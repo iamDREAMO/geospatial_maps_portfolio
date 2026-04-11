@@ -331,7 +331,16 @@ The map was recreated with a focused emphasis on highlighting the population cha
 
 ### Roads – National 250K Map of Ireland
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day14_europe.webp" alt="Day 14 Europe Map" width="500px"></td>
+    </tr>
+    <tr>
+      <td align="center">Europe</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 Ireland was selected for the Europe theme of the 2023 #30DayMapChallenge. As the second-largest island of the British Isles and the third-largest in Europe, it provides a compelling landscape for transportation mapping.
