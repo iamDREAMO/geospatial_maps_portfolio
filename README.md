@@ -528,8 +528,8 @@ The bathymetric model represents a significant contribution to understanding New
 
 <table>
   <tr>
-    <td><img src="map_images/day22_north_not_up_2d..webp" alt="Day 22 North Not Up Map" width="500px"></td>
-    <td><img src="map_images/day22_north_not_up_3d.webp" alt="Day 22 North Not Up 3D Map" width="700px"></td>
+    <td><img src="map_images/day22_north_not_up_2d.webp" alt="Day 22 North Not Up Map" width="100%"></td>
+    <td><img src="map_images/day22_north_not_up_3d.webp" alt="Day 22 North Not Up 3D Map" width="100%"></td>
   </tr>
   <tr>
     <td align="center">North Not Up-2D</td>
