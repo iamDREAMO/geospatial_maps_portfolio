@@ -735,7 +735,16 @@ This project marked my first use of Aerialod for 3D population visualization, an
 
 ### 2023 Challenge Summary
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day30_wrap.webp" alt="Day 30 Wrap-up for the chanllenge" width="600px"></td>
+    </tr>
+    <tr>
+      <td align="center">Favorite</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 This marks the wrap-up of the visualization Challenge, an incredible journey of exploring diverse mapping concepts and refining my cartography skills.
