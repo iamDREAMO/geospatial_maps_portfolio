@@ -258,12 +258,12 @@ Inspired by the [United States Environmental Protection Agency (EPA)]((https://w
 
 ##  **Day 11 — Retro (Vintage-Style)**
 
-### Soil Suitability Map for Mechanised and Other Cultivation Practices in Ghana
+### Soil Suitability Map for Mechanised and Other Cultivation Practices in Ghana (1971)
 
 <table>
   <tr>
-    <td><img src="map_images/day11_retro_2d.webp" alt="A Reto 2D Map" width="100%"></td>
-    <td><img src="map_images/day11_retro_3d.webp" alt="A Retro 3D Map" width="100%"></td>
+    <td><img src="map_images/day11_retro_2d.webp" alt="Day 11 Reto 2D Map" width="100%"></td>
+    <td><img src="map_images/day11_retro_3d.webp" alt="Day 11 Retro 3D Map" width="100%"></td>
   </tr>
   <tr>
     <td align="center">Retro-2D</td>
@@ -283,9 +283,16 @@ This project is originally produced and printed by the Survey Department, Accra,
 
 ### Geological Map of South America
 
-<!-- IMAGE PLACEHOLDER FOR 3D -->
-
-<!-- IMAGE PLACEHOLDER FOR 2D -->
+<table>
+  <tr>
+    <td><img src="map_images/day12_south_america_2d.webp" alt="Day 12 South America 2D Map" width="100%"></td>
+    <td><img src="map_images/day12_south_america_3d.webp" alt="Day 12 South America 3D Map" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center">South America-2D</td>
+    <td align="center">South America-3D</td>
+  </tr>
+</table>
 
 **Overview:**
 This geological map of South America was originally published between 1928 and 1940 by the TCI Cartographic Office for the Italian Encyclopedia of the Giovanni Treccani Institute and printed by the renowned Italian publisher Antonio Vallardi (Milano). The map was created by Guido Bonarelli (1871–1951), an Italian geologist and paleontologist.
