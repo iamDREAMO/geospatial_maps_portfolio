@@ -582,7 +582,16 @@ Laos, located in Southeast Asia, is characterized by a predominantly mountainous
 
 ### Homebush Bay, Sydney
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day24_black_white.webp" alt="Day 24 Black and White Map" width="600px"></td>
+    </tr>
+    <tr>
+      <td align="center">Black and White</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 Homebush Bay is located on the southern bank of the Parramatta River in western Sydney, Australia. The area includes not only the bay itself but also adjoining land to its west and south. Formerly recognized as an official suburb of Sydney, it now encompasses the suburbs of Sydney Olympic Park, Wentworth Point, and part of Lidcombe, all within the jurisdiction of the City of Parramatta. Homebush Bay is situated approximately 13 kilometers (8.1 miles) west of Sydney’s central business district.
