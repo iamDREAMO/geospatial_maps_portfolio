@@ -310,7 +310,7 @@ For this project, the original plain map was georeferenced in QGIS, integrated w
 <div align="center">
   <table>
     <tr>
-      <td><img src="map_images/day13_choropleth.webp" alt="Day 13 Choropleth Map" width="600px"></td>
+      <td><img src="map_images/day13_choropleth.webp" alt="Day 13 Choropleth Map" width="500px"></td>
     </tr>
     <tr>
       <td align="center">Choropleth</td>
