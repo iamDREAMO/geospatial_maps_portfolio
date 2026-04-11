@@ -405,7 +405,16 @@ The original map was enhanced through digital processing and 3D modeling to prov
 
 ### International Students in the United States – Place of Origin from West Africa (2022/2023)
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day17_flow.webp" alt="Day 17 Flow Map" width="500px"></td>
+    </tr>
+    <tr>
+      <td align="center">Flow</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 This theme focused on the movement of transport and people. For this entry, I chose to explore the flow of people, specifically international student mobility.
