@@ -585,7 +585,7 @@ Laos, located in Southeast Asia, is characterized by a predominantly mountainous
 <div align="center">
   <table>
     <tr>
-      <td><img src="map_images/day24_black_white.webp" alt="Day 24 Black and White Map" width="600px"></td>
+      <td><img src="map_images/day24_black_white.webp" alt="Day 24 Black and White Map" width="500px"></td>
     </tr>
     <tr>
       <td align="center">Black and White</td>
@@ -606,9 +606,16 @@ This map was generated using Prettymaps to align with the black-and-white theme,
 
 ### Antarctica 1987
 
-<!-- IMAGE PLACEHOLDER FOR 3D -->
-
-<!-- IMAGE PLACEHOLDER FOR 2D -->
+<table>
+  <tr>
+    <td><img src="map_images/day25_antarctica_2d.webp" alt="Day 25 Antartica 2D Map" width="100%"></td>
+    <td><img src="map_images/day25_antarctica_3d.webp" alt="Day 25 Antartica 3D Map" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center">Antartica-2D</td>
+    <td align="center">Antartica-3D</td>
+  </tr>
+</table>
 
 **Overview:**
 This project presents a 3D visualization of a historical Antarctic map sourced from the University of Wisconsin Library collections. The map reflects the principles later reinforced under the 1991 Protocol to the Antarctic Treaty, which requires that Antarctica be used exclusively for peaceful purposes. The treaty framework prohibits military activities, including weapons testing, as well as the detonation of nuclear devices and the disposal of radioactive waste within the region.
