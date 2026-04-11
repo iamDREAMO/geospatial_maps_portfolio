@@ -654,7 +654,16 @@ Contour polygons in QGIS are created by generating polygon features from contour
 
 ### Open Pubs in UK
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day27_dots.webp" alt="Day 27 Dot Map" width="500px"></td>
+    </tr>
+    <tr>
+      <td align="center">Dot Map</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 For the Dot theme, this map visualizes open pubs across the UK. The data was sourced from GetTheData, a platform dedicated to organizing UK open data into location-based dashboards.
