@@ -678,7 +678,16 @@ GetTheData not only provides access to datasets but also clearly directs users t
 
 ### Isometric Terrain Render
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day28_chart_map.webp" alt="Day 28 Chart/Map - Map" width="500px"></td>
+    </tr>
+    <tr>
+      <td align="center">Chart or Map</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 Is this a chart or a map? This visualization explores Japan’s climate and seasonal variation across its regions. While it may resemble a chart, in thematic mapping, the distinction isn’t always clear. The data is based on averages from 1981–2010, highlighting how Japan experiences four distinct seasons with varying climate patterns:
