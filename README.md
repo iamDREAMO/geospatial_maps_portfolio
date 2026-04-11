@@ -558,9 +558,16 @@ This project presents a 3D visualization of a historical map depicting fossil si
 
 ### Elevation Map of Laos
 
-<!-- IMAGE PLACEHOLDER FOR 3D -->
-
-<!-- IMAGE PLACEHOLDER FOR 2D -->
+<table>
+  <tr>
+    <td><img src="map_images/day23_3d_2d.webp" alt="Day 23 theme in 2D Map" width="100%"></td>
+    <td><img src="map_images/day23_3d_3d.webp" alt="Day 23 3D-3D Map" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center">2D</td>
+    <td align="center">3D</td>
+  </tr>
+</table>
 
 **Overview:**
 A 3D elevation model highlighting Laos’ mountainous terrain and river systems. The 2D representation supports analytical clarity, while the 3D visualization enhances depth perception.
