@@ -481,7 +481,7 @@ The map was generated using Prettymaps, a Python package developed by [Marcelo d
 <div align="center">
   <table>
     <tr>
-      <td><img src="map_images/day20_outdoors_.gif" alt="Day 20 Outdoors Map" width="500px"></td>
+      <td><img src="map_images/day20_outdoors_.gif" alt="Day 20 Outdoors Map" width="600px"></td>
     </tr>
     <tr>
       <td align="center">Outdoors</td>
@@ -504,8 +504,8 @@ In alignment with the theme, this visualization was developed using Google Earth
 
 <table>
   <tr>
-    <td><img src="map_images/day21_raster_2d.webp" alt="2D Map" width="100%"></td>
-    <td><img src="map_images/day21_raster_3d.webp" alt="3D Map" width="100%"></td>
+    <td><img src="map_images/day21_raster_2d.webp" alt="Day 21 Raster 2D Map" width="100%"></td>
+    <td><img src="map_images/day21_raster_3d.webp" alt=" Day 21 Raster 3D Map" width="100%"></td>
   </tr>
   <tr>
     <td align="center">Raster-2D</td>
@@ -526,9 +526,16 @@ The bathymetric model represents a significant contribution to understanding New
 
 ### Fossil Map of Antarctica (1970)
 
-<!-- IMAGE PLACEHOLDER FOR 3D -->
-
-<!-- IMAGE PLACEHOLDER FOR 2D -->
+<table>
+  <tr>
+    <td><img src="map_images/day22_north_not_up_2d..webp" alt="Day 22 North Not Up Map" width="100%"></td>
+    <td><img src="map_images/day22_north_not_up_3d.webp" alt="Day 22 North Not Up 3D Map" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center">North Not Up-2D</td>
+    <td align="center">North Not Up-3D</td>
+  </tr>
+</table>
 
 **Overview:**
 I encountered an important cartographic concept regarding the use of north arrows, highlighted in a discussion by [Mirza Waleed](https://github.com/waleedgeo). Not all maps require a north arrow; its inclusion depends on factors such as the geographic extent of the area being visualized and, more importantly, the projection used in the map design.
