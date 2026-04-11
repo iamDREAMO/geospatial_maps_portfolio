@@ -710,7 +710,16 @@ This information is derived from the Japan Meteorological Agency and provides in
 
 ### Ghana Population Density 2020, UN Adjusted
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day29_population.webp" alt="Day 29 Population Map" width="600px"></td>
+    </tr>
+    <tr>
+      <td align="center">Population</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 For the Population theme of the 2023 #30daymapchallenge, I focused on Ghana, visualizing population density using data from the WorldPop Hub geodatabase.
