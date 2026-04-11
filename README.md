@@ -429,7 +429,16 @@ After sourcing data from the Open Doors Data organization, I identified relevant
 
 ### Global Burning Index (CEMS), 2010
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day18_atmosphere.webp" alt="Day 18 Atmosphere Map" width="500px"></td>
+    </tr>
+    <tr>
+      <td align="center">Atmosphere</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 The theme focused on atmospheric conditions, including weather and climate-related phenomena. I visualized the Global Burning Index (CEMS) for 2010 to highlight patterns associated with fire activity and environmental conditions at a global scale.
