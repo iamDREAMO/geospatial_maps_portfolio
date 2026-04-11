@@ -408,7 +408,7 @@ The original map was enhanced through digital processing and 3D modeling to prov
 <div align="center">
   <table>
     <tr>
-      <td><img src="map_images/day17_flow.webp" alt="Day 17 Flow Map" width="500px"></td>
+      <td><img src="map_images/day17_flow.webp" alt="Day 17 Flow Map" width="600px"></td>
     </tr>
     <tr>
       <td align="center">Flow</td>
