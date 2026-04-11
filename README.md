@@ -356,7 +356,16 @@ All roads are symbolized using a single-line representation, regardless of their
 
 ### Venice, Italy – OSM
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day15_osm.webp" alt="Day 15 OSM Map" width="500px"></td>
+    </tr>
+    <tr>
+      <td align="center">OSM</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 Throughout the 2023 #30DayMapChallenge, I worked extensively with OpenStreetMap (OSM) data and explored multiple approaches for acquiring and styling OSM-based maps. This experience sparked an interest in automating the workflow to efficiently generate maps aligned with specific challenge themes.
