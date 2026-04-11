@@ -432,7 +432,7 @@ After sourcing data from the Open Doors Data organization, I identified relevant
 <div align="center">
   <table>
     <tr>
-      <td><img src="map_images/day18_atmosphere.webp" alt="Day 18 Atmosphere Map" width="500px"></td>
+      <td><img src="map_images/day18_atmosphere.webp" alt="Day 18 Atmosphere Map" width="650px"></td>
     </tr>
     <tr>
       <td align="center">Atmosphere</td>
