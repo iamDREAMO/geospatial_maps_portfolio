@@ -454,7 +454,16 @@ Climate Engine leverages Google Earth Engine for on-demand processing of satelli
 
 ### OSM Portions of KNUST
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day19_5min_map.webp" alt="Day 19 5-Minute Map" width="500px"></td>
+    </tr>
+    <tr>
+      <td align="center">A 5-Minute map</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 The guideline for this challenge entry was to spend less than five minutes creating the map. While the total time slightly exceeded the limit—five minutes and five seconds—it remained a rapid workflow exercise focused on efficiency and automation.
