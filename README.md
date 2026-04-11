@@ -307,7 +307,16 @@ For this project, the original plain map was georeferenced in QGIS, integrated w
 
 ### Hong Kong Population Distribution
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day13_choropleth.webp" alt="Day 13 Choropleth Map" width="600px"></td>
+    </tr>
+    <tr>
+      <td align="center">Choropleth</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 This map visualizes Hong Kong’s population distribution by usual spoken language across its 18 districts, based on data from the 2021 Population Census. The dataset was made available by the Census and Statistics Department under the Government of the Hong Kong Special Administrative Region through the [CSDI Portal](https://portal.csdi.gov.hk).
