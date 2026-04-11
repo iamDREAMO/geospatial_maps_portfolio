@@ -381,7 +381,16 @@ I also explored the web application version, Prettymap, developed by [Christoph 
 
 ### 3D Visualized Elevation of Australia
 
-<!-- IMAGE PLACEHOLDER -->
+<table>
+  <tr>
+    <td><img src="map_images/day16_oceania_2d..webp" alt="Day 16 Oceania 2D Map" width="100%"></td>
+    <td><img src="map_images/day16_oceania_3d.webp" alt="Day 16 Oceania 3D Map" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center">Oceania-2D</td>
+    <td align="center">Oceania-3D</td>
+  </tr>
+</table>
 
 **Overview:**
 This project was inspired by a historical map discovered in archival collections, which I reinterpreted and transformed into a 3D elevation visualization. The source material was obtained from the University of Wisconsin–Milwaukee American Geographical Society Library Digital Map Collection, a rich repository of historical maps spanning multiple regions and jurisdictions.
