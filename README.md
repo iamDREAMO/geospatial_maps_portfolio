@@ -608,12 +608,12 @@ This map was generated using Prettymaps to align with the black-and-white theme,
 
 <table>
   <tr>
-    <td><img src="map_images/day25_antarctica_2d.webp" alt="Day 25 Antartica 2D Map" width="500px"></td>
-    <td><img src="map_images/day25_antarctica_3d.webp" alt="Day 25 Antartica 3D Map" width="500px"></td>
+    <td><img src="map_images/day25_antarctica_2d.webp" alt="Day 25 Antarctica 2D Map" width="500px"></td>
+    <td><img src="map_images/day25_antarctica_3d.webp" alt="Day 25 Antarctica 3D Map" width="500px"></td>
   </tr>
   <tr>
-    <td align="center">Antartica-2D</td>
-    <td align="center">Antartica-3D</td>
+    <td align="center">Antarctica-2D</td>
+    <td align="center">Antarctica-3D</td>
   </tr>
 </table>
 
@@ -630,7 +630,16 @@ The copyright of the original 1987 map is attributed to the National Geographic 
 
 ### Minimal Administrative Map
 
-<!-- IMAGE PLACEHOLDER -->
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="map_images/day26_minimal.webp" alt="Day 26 Minimal Map" width="500px"></td>
+    </tr>
+    <tr>
+      <td align="center">Minimal</td>
+    </tr>
+  </table>
+</div>
 
 **Overview:**
 This map visualizes the elevation of Madagascar in meters using the Contour Polygon tool in QGIS, following the challenge theme Minimal – less is more.
