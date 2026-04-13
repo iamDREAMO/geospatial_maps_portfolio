@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>30 Day Map Challenge 🌍 | Geospatial Maps Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=DM+Mono&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f5f2ee;
+      --bg-card: #ffffff;
+      --bg-header: #1a1a2e;
+      --text: #1c1c1c;
+      --text-muted: #6b6b6b;
+      --accent: #c8632a;
+      --accent-light: #f0e8df;
+      --border: #e0dbd4;
+      --tag-bg: #eee8e0;
+      --tag-text: #5a4a3a;
+      --label-bg: #1a1a2e;
+      --label-text: #ffffff;
+      --link: #c8632a;
+      --divider: #d4cfc8;
+      --shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111118;
+        --bg-card: #1c1c26;
+        --bg-header: #0d0d14;
+        --text: #e8e4dc;
+        --text-muted: #8a8494;
+        --accent: #e07840;
+        --accent-light: #2a1f14;
+        --border: #2c2c3a;
+        --tag-bg: #252530;
+        --tag-text: #b0a8c0;
+        --label-bg: #252535;
+        --label-text: #d0cce0;
+        --link: #e07840;
+        --divider: #2a2a38;
+        --shadow: 0 2px 16px rgba(0,0,0,0.3);
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--bg-header);
+      color: #ffffff;
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 50%, rgba(200,99,42,0.18) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 30%, rgba(80,60,160,0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .header-globe {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      display: block;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    header p {
+      max-width: 620px;
+      margin: 0 auto 1.5rem;
+      color: rgba(255,255,255,0.7);
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .header-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .badge {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.85);
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-family: 'DM Mono', monospace;
+    }
+
+    /* TOOLS SECTION */
+    .tools-section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    .tools-section h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .tools-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tool-tag {
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      padding: 0.35rem 0.9rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-family: 'DM Mono', monospace;
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 2rem 5rem;
+    }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 2rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--divider);
+    }
+
+    /* ENTRY CARD */
+    .entry {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 2.5rem;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .entry:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+    }
+
+    .entry-header {
+      padding: 1.5rem 1.75rem 1rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .day-number {
+      background: var(--label-bg);
+      color: var(--label-text);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      padding: 0.3rem 0.65rem;
+      border-radius: 6px;
+      white-space: nowrap;
+      margin-top: 0.2rem;
+      flex-shrink: 0;
+    }
+
+    .entry-title-block h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    .entry-title-block .theme {
+      font-size: 0.82rem;
+      color: var(--accent);
+      font-family: 'DM Mono', monospace;
+      margin-top: 0.2rem;
+    }
+
+    /* IMAGES */
+    .entry-images {
+      padding: 1.5rem 1.75rem;
+    }
+
+    .img-single {
+      display: flex;
+      justify-content: center;
+    }
+
+    .img-single img, .img-pair img {
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+      display: block;
+      background: var(--tag-bg);
+    }
+
+    .img-single-wrap {
+      width: 60%;
+      max-width: 400px;
+    }
+
+    .img-single-wrap .img-label,
+    .img-pair-wrap .img-label {
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-family: 'DM Mono', monospace;
+      margin-top: 0.5rem;
+    }
+
+    .img-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .img-pair-wrap {}
+
+    /* GIF same as img */
+    .entry-images img[src$=".gif"] {
+      border-radius: 10px;
+    }
+
+    /* OVERVIEW */
+    .entry-body {
+      padding: 0 1.75rem 1.5rem;
+    }
+
+    .entry-body p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 0.75rem;
+    }
+
+    .entry-body ul {
+      padding-left: 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .entry-body ul li {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+    }
+
+    .meta-row span {
+      color: var(--text-muted);
+    }
+
+    .meta-row strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .meta-row a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    .meta-row a:hover {
+      text-decoration: underline;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--divider);
+    }
+
+    footer a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .img-single-wrap { width: 90%; }
+      .img-pair { grid-template-columns: 1fr; }
+      .entry-header { flex-direction: column; gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <span class="header-globe">🌍</span>
+  <h1>30 Day Map Challenge</h1>
+  <p>A curated collection of my entries for the <strong>30 Day Map Challenge</strong>, exploring cartography, GIS analysis, spatial storytelling, and 3D terrain visualization.</p>
+  <div class="header-badges">
+    <span class="badge">QGIS</span>
+    <span class="badge">Blender</span>
+    <span class="badge">Google Earth Engine</span>
+    <span class="badge">Aerialod</span>
+    <span class="badge">Prettymaps</span>
+    <span class="badge">Excel</span>
+  </div>
+</header>
+
+<div class="tools-section">
+  <h2>Tools and Technologies</h2>
+  <div class="tools-grid">
+    <span class="tool-tag">QGIS</span>
+    <span class="tool-tag">Google Earth Engine</span>
+    <span class="tool-tag">Climate Engine</span>
+    <span class="tool-tag">Google Earth Explorer</span>
+    <span class="tool-tag">Prettymaps</span>
+    <span class="tool-tag">Blender</span>
+    <span class="tool-tag">Aerialod</span>
+    <span class="tool-tag">Microsoft Excel</span>
+    <span class="tool-tag">Google Sheets</span>
+  </div>
+</div>
+
+<main>
+  <p class="section-label">Challenge Entries — 30 Days</p>
+
+  <!-- DAY 1 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 01</span>
+      <div class="entry-title-block">
+        <h2>Town Distribution Across Ghana</h2>
+        <div class="theme">Points</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day1_points.webp" alt="Day 1 Points Map" />
+          <div class="img-label">Points</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>This map visualizes the distribution of towns across Ghana's 16 administrative regions. Ghana is divided into 228 districts, categorized as ordinary, municipal, or metropolitan based on population thresholds.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> Excel • QGIS</span>
+        <span><strong>Data:</strong> <a href="https://statsghana.gov.gh/" target="_blank">Ghana Statistical Services</a> • <a href="https://www.citypopulation.de/en/ghana/admin/" target="_blank">City Population</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 02</span>
+      <div class="entry-title-block">
+        <h2>Flight Route to DjangoCon US 2023 (Durham, NC)</h2>
+        <div class="theme">Lines</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day2_lines.webp" alt="Day 2 Lines Map" />
+          <div class="img-label">Lines</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>This map illustrates the international flight route to DjangoCon US 2023 in Durham, North Carolina. The total flight duration was approximately 22 hours, excluding layovers.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> Google Sheets • QGIS</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 03</span>
+      <div class="entry-title-block">
+        <h2>Lakes of the World</h2>
+        <div class="theme">Polygons</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day3_polygons.gif" alt="Day 3 Polygons Map" />
+          <div class="img-label">Polygons</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>A global visualization of lakes represented as polygon features, emphasizing surface area distribution and spatial patterns.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS</span>
+        <span><strong>Web Map:</strong> <a href="https://iamdreamo.github.io/Webmap-for-Day3-30daysChallenge/" target="_blank">World Lakes Map</a></span>
+        <span><strong>Data:</strong> <a href="https://www.efrainmaps.es" target="_blank">EfrainMaps</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 04</span>
+      <div class="entry-title-block">
+        <h2>What Makes a Map Ineffective?</h2>
+        <div class="theme">A Bad Map</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day4_bad_map.webp" alt="Day 4 Bad Map" />
+          <div class="img-label">A Bad Map</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>This entry explores cartographic principles by demonstrating what constitutes a poorly designed map. A map that does not clearly answer <strong>What, Where, When, and Who</strong> may be considered ineffective.</p>
+      <p>Essential cartographic elements include: Title, Legend, Scale, North Arrow, Coordinate Reference System, and Source information.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS</span>
+        <span><strong>Data:</strong> <a href="https://www.efrainmaps.es" target="_blank">EfrainMaps</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 05</span>
+      <div class="entry-title-block">
+        <h2>Mo'orea Volcanic Island (Physical Model)</h2>
+        <div class="theme">Analogue</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day5_analogue.webp" alt="Day 5 Analogue Map" />
+          <div class="img-label">Analogue</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>A handcrafted terrain representation of Mo'orea, a volcanic island in French Polynesia. This entry focused on physical terrain modeling without digital GIS tools.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> My hand and Imaginations 😂👍🏾</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 6 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 06</span>
+      <div class="entry-title-block">
+        <h2>Country Cities in Asia</h2>
+        <div class="theme">Asia</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day6_asia.webp" alt="Day 6 Asia Map" />
+          <div class="img-label">Asia</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>This map visualizes major cities across countries within the Asian continent. Accessing consistent and reliable city-level datasets for this project was particularly challenging.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS</span>
+        <span><strong>Data:</strong> <a href="https://www.efrainmaps.es" target="_blank">EfrainMaps</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 7 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 07</span>
+      <div class="entry-title-block">
+        <h2>Flight Flow from ACC to Neighboring Countries</h2>
+        <div class="theme">Navigation</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day7_navigation.webp" alt="Day 7 Navigation Map" />
+          <div class="img-label">Navigation</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>This map visualizes outbound flight connections from Kotoka International Airport (ACC) to airports, airfields, and helipads across neighboring countries, highlighting regional air connectivity patterns.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS</span>
+        <span><strong>Data:</strong> <a href="https://www.efrainmaps.es" target="_blank">EfrainMaps</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 8 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 08</span>
+      <div class="entry-title-block">
+        <h2>Cassava Africa</h2>
+        <div class="theme">Africa</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day8_africa.webp" alt="Day 8 Africa Map" />
+          <div class="img-label">Africa</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>This map illustrates the spatial distribution of cassava cultivation across Africa. Each point represents approximately 500 hectares of land dedicated to cassava farming.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS</span>
+        <span><strong>Data:</strong> <a href="https://hub.arcgis.com/datasets/" target="_blank">ArcGIS Hub Datasets</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 9 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 09</span>
+      <div class="entry-title-block">
+        <h2>Elevation of Lesotho</h2>
+        <div class="theme">Hexagons</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day9_hexagons.webp" alt="Day 9 Hexagons Map" />
+          <div class="img-label">Hexagons</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>A hexagon-based elevation visualization of Lesotho. This project marked my first combination of QGIS and Blender for enhanced terrain visualization.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS • Blender</span>
+        <span><strong>Data:</strong> <a href="https://www.diva-gis.org/gdata" target="_blank">DIVA-GIS</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 10 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 10</span>
+      <div class="entry-title-block">
+        <h2>Level II Ecoregions of North America</h2>
+        <div class="theme">North America</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day10_north_america.webp" alt="Day 10 North America Map" />
+          <div class="img-label">North America</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>This map recreates the classification of 50 Level II ecological regions of North America, offering deeper insight into large ecological areas across the continent.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS • Blender</span>
+        <span><strong>Data:</strong> <a href="https://hub.arcgis.com/datasets/" target="_blank">ArcGIS Hub Datasets</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 11 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 11</span>
+      <div class="entry-title-block">
+        <h2>Soil Suitability Map of Ghana (1971)</h2>
+        <div class="theme">Retro (Vintage-Style)</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-pair">
+        <div class="img-pair-wrap">
+          <img src="map_images/day11_retro_2d.webp" alt="Day 11 Retro 2D Map" />
+          <div class="img-label">Retro — 2D</div>
+        </div>
+        <div class="img-pair-wrap">
+          <img src="map_images/day11_retro_3d.webp" alt="Day 11 Retro 3D Map" />
+          <div class="img-label">Retro — 3D</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>Originally produced by the Survey Department, Accra, Ghana in May 1971. The historical map was reinterpreted and transformed into a 3D visualization using Blender.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS • Blender</span>
+        <span><strong>Data:</strong> <a href="https://esdac.jrc.ec.europa.eu/" target="_blank">EUDASM</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 12 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 12</span>
+      <div class="entry-title-block">
+        <h2>Geological Map of South America</h2>
+        <div class="theme">South America</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-pair">
+        <div class="img-pair-wrap">
+          <img src="map_images/day12_south_america_2d.webp" alt="Day 12 South America 2D Map" />
+          <div class="img-label">South America — 2D</div>
+        </div>
+        <div class="img-pair-wrap">
+          <img src="map_images/day12_south_america_3d.webp" alt="Day 12 South America 3D Map" />
+          <div class="img-label">South America — 3D</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>Originally published between 1928–1940 by the TCI Cartographic Office. The original map was georeferenced in QGIS and modeled in Blender for a 3D visualization.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS • Blender</span>
+        <span><strong>Data:</strong> <a href="https://commons.wikimedia.org/" target="_blank">Wikimedia Commons</a> • DEM - USGS</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 13 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 13</span>
+      <div class="entry-title-block">
+        <h2>Hong Kong Population Distribution</h2>
+        <div class="theme">Choropleth</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day13_choropleth.webp" alt="Day 13 Choropleth Map" />
+          <div class="img-label">Choropleth</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>Visualizes Hong Kong's population distribution by usual spoken language across its 18 districts, based on data from the 2021 Population Census.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS</span>
+        <span><strong>Data:</strong> <a href="https://hub.arcgis.com/datasets/" target="_blank">ArcGIS Hub Datasets</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 14 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 14</span>
+      <div class="entry-title-block">
+        <h2>Roads – National 250K Map of Ireland</h2>
+        <div class="theme">Europe</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day14_europe.webp" alt="Day 14 Europe Map" />
+          <div class="img-label">Europe</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>Highlights the European road network (E-roads) and key connections between built-up areas across Ireland, the third-largest island in Europe.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS • Blender</span>
+        <span><strong>Data:</strong> <a href="https://data-osi.opendata.arcgis.com/datasets/" target="_blank">Tailte Éireann</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 15 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 15</span>
+      <div class="entry-title-block">
+        <h2>Venice, Italy – OSM</h2>
+        <div class="theme">OpenStreetMap</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day15_osm.webp" alt="Day 15 OSM Map" />
+          <div class="img-label">OSM</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>Generated using Prettymaps, a Python package for drawing customizable maps from OpenStreetMap data, built on osmnx, matplotlib, shapely, and vsketch.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> <a href="https://github.com/chrieke/prettymapp" target="_blank">Prettymaps</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 16 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 16</span>
+      <div class="entry-title-block">
+        <h2>3D Visualized Elevation of Australia</h2>
+        <div class="theme">Oceania</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-pair">
+        <div class="img-pair-wrap">
+          <img src="map_images/day16_oceania_2d.webp" alt="Day 16 Oceania 2D Map" />
+          <div class="img-label">Oceania — 2D</div>
+        </div>
+        <div class="img-pair-wrap">
+          <img src="map_images/day16_oceania_3d.webp" alt="Day 16 Oceania 3D Map" />
+          <div class="img-label">Oceania — 3D</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>Inspired by a historical map from the University of Wisconsin–Milwaukee American Geographical Society Library, reinterpreted as a 3D elevation visualization.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS • Blender</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 17 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 17</span>
+      <div class="entry-title-block">
+        <h2>International Students in the US from West Africa (2022/2023)</h2>
+        <div class="theme">Flow</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day17_flow.webp" alt="Day 17 Flow Map" />
+          <div class="img-label">Flow</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>Visualizes the flow of international students from West African Sub-Saharan countries to the U.S. during the 2022/2023 academic year.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> Microsoft Excel • QGIS</span>
+        <span><strong>Data:</strong> <a href="https://www.gh.usembassy.gov/" target="_blank">US Embassy Ghana</a> • <a href="https://www.opendoorsdata.org/" target="_blank">Open Doors Data</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 18 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 18</span>
+      <div class="entry-title-block">
+        <h2>Global Burning Index (CEMS), 2010</h2>
+        <div class="theme">Atmosphere</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day18_atmosphere.webp" alt="Day 18 Atmosphere Map" />
+          <div class="img-label">Atmosphere</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>Visualizes the Global Burning Index (CEMS) for 2010, developed using Climate Engine — a platform leveraging Google Earth Engine for on-demand satellite data processing.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> Google Earth Engine • Climate Engine</span>
+        <span><strong>Data:</strong> <a href="https://app.climateengine.org/" target="_blank">Climate Engine</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 19 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 19</span>
+      <div class="entry-title-block">
+        <h2>OSM Portions of KNUST</h2>
+        <div class="theme">5-Minute Map</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day19_5min.webp" alt="Day 19 5-Minute Map" />
+          <div class="img-label">A 5-Minute Map</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>Generated in just over five minutes using Prettymaps, a rapid workflow exercise focused on efficiency and automation from OpenStreetMap data.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> <a href="https://prettymapp.streamlit.app/" target="_blank">Prettymap</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 20 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 20</span>
+      <div class="entry-title-block">
+        <h2>Kilimanjaro</h2>
+        <div class="theme">Outdoors</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day20_outdoors.webp" alt="Day 20 Outdoors Map" />
+          <div class="img-label">Outdoors</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>Mount Kilimanjaro — the tallest mountain in Africa at 5,895m — visualized using Google Earth to emphasize terrain structure and the mountain's dominant landscape presence.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> Google Earth</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 21 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 21</span>
+      <div class="entry-title-block">
+        <h2>3D Bathymetry of New Zealand</h2>
+        <div class="theme">Raster</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-pair">
+        <div class="img-pair-wrap">
+          <img src="map_images/day21_raster_2d.webp" alt="Day 21 Raster 2D Map" />
+          <div class="img-label">Raster — 2D</div>
+        </div>
+        <div class="img-pair-wrap">
+          <img src="map_images/day21_raster_3d.webp" alt="Day 21 Raster 3D Map" />
+          <div class="img-label">Raster — 3D</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>Developed using NIWA's bathymetry model of New Zealand at 250m spatial resolution, compiled from coastal nautical charts, digital sounding archives, and multibeam survey data.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS • Blender</span>
+        <span><strong>Data:</strong> <a href="https://data-niwa.opendata.arcgis.com/datasets/" target="_blank">NIWA Open Data</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 22 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 22</span>
+      <div class="entry-title-block">
+        <h2>Fossil Map of Antarctica (1970)</h2>
+        <div class="theme">North Is Not Always Up</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-pair">
+        <div class="img-pair-wrap">
+          <img src="map_images/day22_north_not_up_2d.webp" alt="Day 22 North Not Up 2D Map" />
+          <div class="img-label">North Not Up — 2D</div>
+        </div>
+        <div class="img-pair-wrap">
+          <img src="map_images/day22_north_not_up_3d.webp" alt="Day 22 North Not Up 3D Map" />
+          <div class="img-label">North Not Up — 3D</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>A 3D visualization of a historical map depicting fossil sites in Antarctica as of 1970, originally compiled by Campbell Craddock and published by the American Geographical Society.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS • Blender</span>
+        <span><strong>Data:</strong> <a href="https://portal.opentopography.org/dataCatalog" target="_blank">Open Topography</a> • UW AGS Library</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 23 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 23</span>
+      <div class="entry-title-block">
+        <h2>Elevation Map of Laos</h2>
+        <div class="theme">3D</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-pair">
+        <div class="img-pair-wrap">
+          <img src="map_images/day23_3d_2d.webp" alt="Day 23 2D Map" />
+          <div class="img-label">2D</div>
+        </div>
+        <div class="img-pair-wrap">
+          <img src="map_images/day23_3d_3d.webp" alt="Day 23 3D Map" />
+          <div class="img-label">3D</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>A 3D elevation model highlighting Laos' mountainous terrain and river systems. Laos is characterized by a predominantly mountainous landscape traversed by the Mekong River.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS • Blender</span>
+        <span><strong>Data:</strong> <a href="https://www.diva-gis.org/gdata" target="_blank">DIVA-GIS</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 24 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 24</span>
+      <div class="entry-title-block">
+        <h2>Homebush Bay, Sydney</h2>
+        <div class="theme">Black & White</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day24_black_white.webp" alt="Day 24 Black and White Map" />
+          <div class="img-label">Black & White</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>Homebush Bay, located ~13km west of Sydney's CBD, generated using Prettymaps to align with the black-and-white theme, emphasizing minimalism and contrast.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS • Prettymap</span>
+        <span><strong>Data:</strong> OSM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 25 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 25</span>
+      <div class="entry-title-block">
+        <h2>Antarctica 1987</h2>
+        <div class="theme">Antarctica</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-pair">
+        <div class="img-pair-wrap">
+          <img src="map_images/day25_antarctica_2d.webp" alt="Day 25 Antarctica 2D Map" />
+          <div class="img-label">Antarctica — 2D</div>
+        </div>
+        <div class="img-pair-wrap">
+          <img src="map_images/day25_antarctica_3d.webp" alt="Day 25 Antarctica 3D Map" />
+          <div class="img-label">Antarctica — 3D</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>A 3D visualization of a historical 1987 Antarctic map from the University of Wisconsin Library, originally produced by the American Geographical Society.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS • Blender</span>
+        <span><strong>Data:</strong> UW AGS Library Digital Map Collection</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 26 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 26</span>
+      <div class="entry-title-block">
+        <h2>Minimal Administrative Map</h2>
+        <div class="theme">Minimal</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day26_minimal.webp" alt="Day 26 Minimal Map" />
+          <div class="img-label">Minimal</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>Visualizes the elevation of Madagascar using the Contour Polygon tool in QGIS — less is more.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS</span>
+        <span><strong>Data:</strong> <a href="https://www.diva-gis.org/gdata" target="_blank">DIVA-GIS</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 27 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 27</span>
+      <div class="entry-title-block">
+        <h2>Open Pubs in UK</h2>
+        <div class="theme">Dot Map</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day27_dot_map.webp" alt="Day 27 Dot Map" />
+          <div class="img-label">Dot Map</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>Visualizes open pubs across the UK sourced from GetTheData, a platform organizing UK open data into location-based dashboards.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS</span>
+        <span><strong>Data:</strong> <a href="https://www.getthedata.com/open-pubs" target="_blank">GetTheData</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 28 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 28</span>
+      <div class="entry-title-block">
+        <h2>Isometric Terrain Render — Japan Climate</h2>
+        <div class="theme">Chart/Map</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day28_chart_map.webp" alt="Day 28 Chart Map" />
+          <div class="img-label">Chart or Map</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>Explores Japan's climate and seasonal variation across its regions using averages from 1981–2010. Is this a chart or a map? In thematic mapping, the distinction isn't always clear.</p>
+      <div class="meta-row">
+        <span><strong>Data:</strong> <a href="https://www.sunny-spot.net/english/AboutJapaneaseSeason.html?area=0" target="_blank">Weather of Japan</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 29 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 29</span>
+      <div class="entry-title-block">
+        <h2>Ghana Population Density 2020, UN Adjusted</h2>
+        <div class="theme">Population</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day29_population.webp" alt="Day 29 Population Map" />
+          <div class="img-label">Population</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>Visualizes Ghana's population density at 30 arc-second resolution (~1km), adjusted to match UN population estimates. My first use of Aerialod for 3D population visualization.</p>
+      <div class="meta-row">
+        <span><strong>Tools:</strong> QGIS • <a href="https://ephtracy.github.io/index.html?page=aerialod" target="_blank">Aerialod</a></span>
+        <span><strong>Data:</strong> <a href="https://hub.worldpop.org/geodata/" target="_blank">WorldPop Hub</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 30 -->
+  <div class="entry">
+    <div class="entry-header">
+      <span class="day-number">DAY 30</span>
+      <div class="entry-title-block">
+        <h2>2023 Challenge Summary</h2>
+        <div class="theme">Wrap-Up (Favorite)</div>
+      </div>
+    </div>
+    <div class="entry-images">
+      <div class="img-single">
+        <div class="img-single-wrap">
+          <img src="map_images/day30_favorite.webp" alt="Day 30 Wrap-up" />
+          <div class="img-label">Favorite</div>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p>This marks the wrap-up of the visualization challenge — an incredible journey of exploring diverse mapping concepts and refining cartography skills over 30 days.</p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>Built with ❤️ by <a href="https://github.com/iamDREAMO" target="_blank">Benedict</a> · <a href="https://github.com/iamDREAMO/geospatial_maps_portfolio/edit/main/README.md" target="_blank">Improve this page</a></p>
+</footer>
+
+</body>
+</html>
