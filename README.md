@@ -1,12 +1,11 @@
 # 30 Day Map Challenge 🌍 
 
-A curated collection of my entries for the **30 Day Map Challenge 2023**, exploring cartography, GIS analysis, spatial storytelling, and 3D terrain visualization.
+A curated collection of my entries for the **30 Day Map Challenge**, exploring cartography, GIS analysis, spatial storytelling, and 3D terrain visualization.
 
-Throughout this challenge, I worked extensively with **QGIS, Blender, Google Earth Engine**, and related geospatial tools to produce both 2D and 3D visualizations across diverse global themes.
 
 ---
 
-## **Tools & Technologies**
+## **Tools/Technologies Used**
 
 **GIS & Spatial Analysis:** QGIS • Google Earth Engine • Climate Engine • Google Earth Explorer • Prettymaps
 **3D Visualization:** Blender • Aerialod
